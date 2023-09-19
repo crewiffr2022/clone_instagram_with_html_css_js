@@ -129,6 +129,8 @@ body{
     color: #626666d2;
 }
 /*debut de la page principale*/
+
+
 .pageTotal{
     display: flex;
 }
@@ -137,20 +139,22 @@ body{
     width: 250px;
     background-color: none;
     border-right: 1px solid gainsboro;
+
     position: fixed;
     left: 0;
 }
 .CentralPart{
-    height: 100vh;
+    height: 260vh;
     width: calc(100% - 650px);
-   position: absolute;
+    border-left: 1px solid gainsboro;
    margin-left:250px;
-    background-color: #446497;  
+   position: absolute;
+  /* background-color: #2060df; */
 }
 .RightPart{
     height: 100vh;
     width:400px;
-    position: absolute;
+    position: fixed;
     right: 0;
 }
 
@@ -160,7 +164,7 @@ body{
 }
 
 .ImageDuLogo{
-    height: 90px;
+    height: 82px;
     background-color: none;
     display: flex;
     align-items: center;
@@ -228,7 +232,7 @@ body{
     justify-content: center;
 }
 .containerRightPart{
-    margin-top: 35px;
+    margin-top: 50px;
     width: 100%;
 }
 .containerProfilText .Profil{
@@ -326,7 +330,309 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 .meta{
     padding: 36px;
 }
-.NouvellePublication{
+.ContainerNouvellePublication{
     height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContainerNouvellePublication button{
+height: 35px;
+width: 250px;
+border-radius: 35px;
+border: 0px solid;
+font-size: 18px;
+background-color:  #f0f0f0;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+font-weight: bold;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+line-height: 18px;
+}
+.ContainerStatut{
+    width: 100%;
+    height: 80px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContainerStatut .StatutContent{
+    height: 60px;
+    width: 60px;
+    border: 2px solid transparent;
+   border-top-color:#b82e8a ;
+   border-right-color: #d65cad;
+   border-bottom-color: #ffb31a;
+   border-left-color:#ffcc66 ;
+   
+   /* border-image: linear-gradient(to right, #d38312, #a83279);
+    border-image-slice: 1;
+    border-image-width: 2px;*/
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.StatutContent img{
+width: 56px;
+height: 56px;
+border-radius: 50%;
+}
+
+
+
+
+
+
+.PUBLICATION{
+    height: 300vh;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+}
+.PUBLICATION .ContainerPublication{
+    height: 300vh;
+    width: 80%;
+    /*background-color: #3578E5;*/
+}
+.ContainerPublication .ContainerTopPublication{
+    height:80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.PublicationPart1{
+    height: 45px;
+    width: 11%;
+    background-color:none;
+    display: flex;
+    align-items: center;
+}
+.PublicationPart1 .LogoPublication1{
+    height: 45px;
+    width:45px ;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top-color:#b82e8a ;
+    border-right-color: #d65cad;
+    border-bottom-color: #ffb31a;
+    border-left-color:#ffcc66 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoPublication1 img{
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+}
+.PublicationPart2{
+    height: 45px;
+    width: 79%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.PublicationPart2 .ferrari a{
+    font-size: 13px;
+    text-decoration: none;
+    font-weight:600 ;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: black ;
+}
+.JourPoint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    width: 15px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.point{
+    font-size: 20px;
+color: #737373;
+}
+ .jour{
+    font-size: 13px;
+    color: #737373;
+}
+
+.PublicationPart3{
+    height: 45px;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.PublicationPart3 img{
+    width: 22px;
+    height: 22px;
+}
+.PublicationVideo{
+    height: 560px;
+    width: 100%;
+    background-color:black;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PublicationVideo video{
+    width: 100%;
+    height: auto;
+}
+.Appreciation{
+    height: 40px;
+    width: 100%;
     background-color: #737373;
+    display: flex;
+}
+.Appreciation .IconTrio{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.Appreciation .IconSolo{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color:white;
+}
+.IconTrio a{
+    font-size: 23px;
+    color: #101010;
+}
+.commentaire{
+    padding-left: 10px;
+}
+.paper{
+    padding-left: 10px;
+}
+.IconTrio a:hover{
+    color: #b8b8b8;
+}
+.IconSolo a{
+    font-size: 23px;
+    color: #101010;
+    font-weight: 300;
+    line-height: 14px;
+}
+.IconSolo a:hover{
+    color: #b8b8b8;
+}
+.Like{
+    height:20px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+}
+.Like span{
+    font-size: 15px;
+    line-height: 16px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;;
+font-weight: 500;
+}
+.TextAjout1{
+    height:30px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+}
+.TextAjout1 .FerrariBottom a{
+    text-decoration: none;
+    font-weight:600 ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+     color: black ;
+     font-size: 13px;
+}
+.FerrariBottom a:hover{
+    color: #b8b8b8;
+}
+.descripFerrari{
+    padding-left:10px;
+    font-size: 12px;
+    font-weight: 14px;
+    font-weight: 500;
+}
+.TextAjout2{
+    height:30px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+}
+.TextAjout2 a{
+text-decoration: none;
+font-size: 12px;
+color: black;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 500;
+}
+.TextAjout3{
+    height:30px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+}
+.TextAjout3 a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #888888;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    }
+.TextAjout4{
+    height:40px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+}
+.TextAjout4 input{
+border: 0px;
+height: 30px;
+font-size: 14px;
+color: #888888;
+line-height: 16px;
+outline-color:white;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.BottomPublication{
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    height: 10px;
+    background-color:white;
+}
+.PublicationImage{
+    height: 560px;
+    width: 100%;
+    background-color:black;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PublicationImage img{
+    height: 560px;
+    width: 100%;
+    border-radius: 4px;
 }
