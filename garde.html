@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .BtnScrollLeft{
+    background-color: white;
+    color: #999;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+   color: #1869ec;
+   position: relative;
+}
+.BtnScrollRight{
+    background-color: white;
+   color: #1869ec;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    margin-left: 5px;
+    position: relative;
+}
+.StorieContainer{
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: 4rem;
+   grid-gap: 1.5rem;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: row;
+}
+
+.StorieContainer .contentStorie{
+    display: grid;
+    grid-gap: 0.3rem;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.7s ease-in;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ImgContent img{
+height: 60px;
+width: 60px;
+}
+.contentStorie .TextContent{
+    font-size: 13px;
+    color: black;
+    font-weight: 400;
+    line-height: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.StorieContainer .contentStorie .ImgContent {
+   display: block;
+   border-radius: 50%;
+   height: 70px;
+   width: 70px;
+   background: 
+   radial-gradient(rgba(0,0,0,0.15) ,transparent 0),
+   radial-gradient(white 65%, transparent 0),
+   linear-gradient(400deg, #f9ef34, #ee2a7b, #6228d7);
+}
+.StorieContainer .contentStorie .ImgContent img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle(43%);
+}
+    </style>
+</head>
+<body>
+    <button class="BtnScrollLeft"  id="BtnScrollRight" onclick="scroll(1)"><i class="fa-solid fa-circle-chevron-right"></i></button>
+        
+    <div class="StorieContainer">
+    
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/football-3024154_1920.jpg" alt="">
+        </div>
+        <div class="TextContent">Carlito </div>
+      </div>
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/picture1.jpeg" alt="">
+        </div>
+        <div class="TextContent">t.k.a_boy </div>
+
+      </div>
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/laptop-2838921_1920.jpg" alt="">
+        </div>
+        <div class="TextContent">EarlyRayong </div>
+      </div>
+
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/pexels-benjamin-suter-3617453.jpg" alt="">
+        </div>
+        <div class="TextContent">AntaSylla </div>
+      </div>
+
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/cobweb-1630493_1920.jpg" alt="">
+        </div>
+        <div class="TextContent">Joachim_Ak... </div>
+      </div>
+
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/auto-2179220.jpg" alt="">
+        </div>
+        <div class="TextContent">Arséne_Klo... </div>
+      </div>
+      
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/drinking-milk-2549021.jpg" alt="">
+        </div>
+        <div class="TextContent">GasthyAbla</div>
+      </div>
+
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/woman-1692849_1920.jpg" alt="">
+        </div>
+        <div class="TextContent">GloireNk</div>
+      </div>
+      <div class="contentStorie">
+        <div class="ImgContent">
+          <img src="assets/woman-1692849_1920.jpg" alt="">
+        </div>
+        <div class="TextContent">GloireNk</div>
+      </div>
+    </div>
+    <button  class="BtnScrollRight" id="BtnScrollLeft" onclick="scroll(-1)"><i class="fa-solid fa-circle-chevron-left"></i></button>
+
+</body>
+</html>
